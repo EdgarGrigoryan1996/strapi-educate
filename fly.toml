@@ -2,9 +2,10 @@ app = "my-strapi-app"  # Название вашего приложения на
 primary_region = "fra"  # Регион Fly.io, например, Франкфурт
 
 [build]
-  dockerfile = "Dockerfile"  # Указываем Dockerfile для сборки
+  dockerfile = "DockerFile"  # Указываем Dockerfile для сборки
 
 [env]
+  NODE_ENV = "production"
   PORT = "1337"
   HOST = "0.0.0.0"
 
@@ -23,3 +24,4 @@ primary_region = "fra"  # Регион Fly.io, например, Франкфу�
   [[services.ports]]
     handlers = ["tls", "http"]
     port = 443
+
