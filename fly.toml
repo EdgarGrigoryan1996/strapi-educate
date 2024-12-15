@@ -2,7 +2,7 @@ app = "my-strapi-app"  # Название вашего приложения на
 primary_region = "fra"  # Регион Fly.io, например, Франкфурт
 
 [build]
-  dockerfile = "DockerFile"  # Указываем Dockerfile для сборки
+  dockerfile = "Dockerfile"  # Указываем Dockerfile для сборки
 
 [env]
   NODE_ENV = "production"
